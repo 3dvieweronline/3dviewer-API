@@ -44,15 +44,19 @@ print_r(json_decode($result, true));
 
 Successful response:
 ```
-{ "success" : true,
+{
+"success" : true,
 "url" : "https://www.3dvieweronline.com/members/Id9bf31c7ff062936a96d3c8bd1f8f2ff3/3VCKJVxOIM45tzr",
-"modelID" : 1234 }
+"modelID" : 1234
+}
 ```
 
 Response with errors:
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
 
 When you are establishing a SSL connection with curl, please be sure you have a valid CA certificate in your server or CURLOPT_SSL_VERIFYPEER will return an error. If not, you can download a mozilla certificate from here: http://curl.haxx.se/docs/caextract.html.
@@ -143,8 +147,10 @@ Successful response (multiple results)
 
 Response with errors
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
 
 # Upload a model
@@ -221,15 +227,19 @@ Notes: fileUrl must be passed url encoded to include special characters.
 
 Successful response
 ```
-{ "success" : true,
+{
+"success" : true,
 "url" : "https://www.3dvieweronline.com/members/Id9bf31c7ff062936a96d3c8bd1f8f2ff3/3VCKJVxOIM45tzr",
-"modelID" : 1234 , "message": "message", "thumbnail":"https://location/of/your/thumbnail.png"}
+"modelID" : 1234 , "message": "message", "thumbnail":"https://location/of/your/thumbnail.png"
+}
 ```
 
 Response with errors
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
 
 # Upload a model (retrieve from account)
@@ -311,15 +321,19 @@ Notes: fileUrl must be passed url encoded to include special characters.
 
 Successful response
 ```
-{ "success" : true,
+{
+"success" : true,
 "url" : "https://www.3dvieweronline.com/members/Id9bf31c7ff062936a96d3c8bd1f8f2ff3/3VCKJVxOIM45tzr",
-"modelID" : 1234 , "message": "message", "thumbnail":"https://location/of/your/thumbnail.png"}
+"modelID" : 1234 , "message": "message", "thumbnail":"https://location/of/your/thumbnail.png"
+}
 ```
 
 Response with errors
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
 
 # Update a model
@@ -399,15 +413,19 @@ Notes: fileUrl must be passed url encoded to include special characters.
 
 Successful response
 ```
-{ "success" : true,
+{
+"success" : true,
 "url" : "https://www.3dvieweronline.com/members/Id9bf31c7ff062936a96d3c8bd1f8f2ff3/3VCKJVxOIM45tzr",
-"modelID" : 1234 , "message": "message", "thumbnail":"https://location/of/your/thumbnail.png"}
+"modelID" : 1234 , "message": "message", "thumbnail":"https://location/of/your/thumbnail.png"
+}
 ```
 
 Response with errors
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
 
 # Delete a model
@@ -448,14 +466,18 @@ print_r(json_decode($result, true));
 
 Successful response
 ```
-{ "success" : true,
-"message" : "Model 1234 deleted"}
+{
+"success" : true,
+"message" : "Model 1234 deleted"
+}
 ```
 
 Response with errors
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
 
 Deleting a model with the age parameter:
@@ -493,17 +515,21 @@ print_r(json_decode($result, true));
 
 Successful response
 ```
-{ "success" : true,
+{
+"success" : true,
 "message" : "Message",
-"error" : []}
+"error" : []
+}
 ```
 
 If errors occurred deleting the models, their model ID will be reported in the error array.
 
 Response with errors
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
 
 # Geometry Information
@@ -556,6 +582,8 @@ Successful response
 
 Response with errors
 ```
-{ "success" : false,
-"error" : "Error message" }
+{
+"success" : false,
+"error" : "Error message"
+}
 ```
